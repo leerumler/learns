@@ -3,15 +3,29 @@ package main
 import (
 	"fmt"
 	"math"
+	"math/cmplx"
 )
 
-func main() {
+var (
+	toBe          = false
+	maxInt uint64 = 1<<64 - 1
+	z             = cmplx.Sqrt(-5 + 12i)
+)
 
+func basicTypes() {
+	const f = "%T(%v)\n"
+	fmt.Printf(f, toBe, toBe)
+	fmt.Printf(f, maxInt, maxInt)
+	fmt.Printf(f, z, z)
+
+}
+
+func conversions() {
 	var x, y int = 3, 4
 	fmt.Println("Value of X: ", x)
 	fmt.Println("Value of Y: ", y)
 
-	var xsquared int = (x * x)
+	var xsquared = (x * x)
 	var ysquared = (y * y)
 	fmt.Println("X Squared: ", xsquared)
 	fmt.Println("Y Squared: ", ysquared)
@@ -19,8 +33,13 @@ func main() {
 	squares := (xsquared + ysquared)
 	fmt.Println("Squares: ", squares)
 
-	var sqrt float64 = math.Sqrt(float64(squares))
-	var sqrtConvert int = int(sqrt)
+	var sqrt = math.Sqrt(float64(squares))
+	var sqrtConvert = int(sqrt)
 	fmt.Println("Float64 Square Root: ", sqrt)
 	fmt.Println("Int Square Root: ", sqrtConvert)
+
+}
+
+func main() {
+	basicTypes()
 }
