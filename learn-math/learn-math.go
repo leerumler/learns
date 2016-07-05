@@ -5,6 +5,12 @@ import (
 	"math"
 )
 
+// from pi.go
+func printPi() {
+	fmt.Println(math.Pi)
+}
+
+// from sqrt.go
 func sqrt(x float64) float64 {
 	var z float64 = 50
 	for n := 0; n < 10; n++ {
