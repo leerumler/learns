@@ -1,9 +1,9 @@
-package main
+package pointers
 
 import "fmt"
 
-//
-func demonstratePointers() {
+// DemonstratePointers briefly demonstrates how pointers work.
+func DemonstratePointers() {
 	fmt.Println("Creating two numbers...")
 	first, second := 42, 2701
 
@@ -30,9 +30,4 @@ func demonstratePointers() {
 	fmt.Println("New value of second pointer:", *secondpointer)
 	fmt.Println("New value of second number:", second)
 
-}
-
-func main() {
-	//
-	demonstratePointers()
 }

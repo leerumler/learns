@@ -1,12 +1,12 @@
-package main
+package maths
 
 import (
 	"fmt"
 	"math"
 )
 
-// from pi.go
-func printPi() {
+// PrintPi prints Pi.
+func PrintPi() {
 	fmt.Println(math.Pi)
 }
 
@@ -20,7 +20,9 @@ func sqrt(x float64) float64 {
 	return z
 }
 
-func main() {
+// TakeSquares compares the accuracy of a square root taken using Newton's
+// method and a square root taken by Go's built-in math.Sqrt().
+func TakeSquares() {
 	fmt.Println(math.Sqrt(6))
 	fmt.Println(sqrt(6))
 }

@@ -1,10 +1,11 @@
-package main
+package random
 
 import (
 	"fmt"
 	"math/rand"
 )
 
-func main() {
+// FaveNum prints out a "random" favorite number.
+func FaveNum() {
 	fmt.Println("My favorite number is", rand.Int())
 }

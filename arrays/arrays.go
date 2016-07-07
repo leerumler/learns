@@ -1,10 +1,11 @@
-package main
+package arrays
 
 import (
 	"fmt"
 )
 
-func whatsAnArray() {
+// WhatsAnArray creates and prints an array.
+func WhatsAnArray() {
 
 	// Arrays are fixed-length in go, so they can't be resized.
 	// The number in the brackets defines how longh the array is.
@@ -21,8 +22,4 @@ func whatsAnArray() {
 	// curly braces and commas, much like structs.
 	primes := [6]int{2, 3, 5, 7, 11, 13}
 	fmt.Println(primes)
-}
-
-func main() {
-	whatsAnArray()
 }

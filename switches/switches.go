@@ -1,4 +1,4 @@
-package main
+package switches
 
 import (
 	"fmt"
@@ -6,7 +6,8 @@ import (
 	"time"
 )
 
-func whichOS() {
+// WhichOS uses switches to print a message based on the host OS.
+func WhichOS() {
 	fmt.Print("Go runs on ")
 	switch os := runtime.GOOS; os {
 	case "darwin":
@@ -19,7 +20,8 @@ func whichOS() {
 	}
 }
 
-func whenSaturday() {
+// WhenSaturday prints how far away Saturday is in "human" language.
+func WhenSaturday() {
 	fmt.Println("When's Saturday?")
 	today := time.Now().Weekday()
 	switch time.Saturday {
@@ -34,8 +36,9 @@ func whenSaturday() {
 	}
 }
 
-//
-func timeOfDayBasedGreeting() {
+// TimeOfDayBasedGreeting will offer a different greeting based upon
+// what time it is.
+func TimeOfDayBasedGreeting() {
 
 	//
 	t := time.Now().Hour()
@@ -61,8 +64,4 @@ func timeOfDayBasedGreeting() {
 		fmt.Println(eve)
 
 	}
-}
-
-func main() {
-	timeOfDayBasedGreeting()
 }

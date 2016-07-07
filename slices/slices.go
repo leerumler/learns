@@ -1,10 +1,12 @@
-package main
+package slices
 
 import (
 	"fmt"
 )
 
-func whatsASlice() {
+// WhatsASlice briefly explains what slices are, what they do, and includes
+// some basic slicing techniques.
+func WhatsASlice() {
 
 	// A slice is a dynamically-sized, flexible view in to the elements
 	// of an underlying array.  They are declared just like an array, except
@@ -34,7 +36,10 @@ func whatsASlice() {
 
 }
 
-func refsToArrays() {
+// RefsToArrays describes the relationship between slices and their
+// underlying arrays.
+func RefsToArrays() {
+
 	// A slice doesn't store any data; it describes a section of an
 	// underlying array.  It's a "view" in to the array's contents.
 	topfive := [5]string{
@@ -63,7 +68,9 @@ func refsToArrays() {
 
 }
 
-func howToSlice() {
+// HowToSlice describes a more in-depth look at slicing methods.
+func HowToSlice() {
+
 	// When slicing an array, we can omit the high or low bounds and accept
 	// the defaults:  zero for the low bound and the length of the array.
 	primes := [6]int{2, 3, 5, 7, 11, 13}
@@ -83,8 +90,4 @@ func howToSlice() {
 	fmt.Println("First two from slice:", firsttwo)
 	skiptwo := primeslice[2:]
 	fmt.Println("Skip first two from slice:", skiptwo)
-}
-
-func main() {
-	howToSlice()
 }
