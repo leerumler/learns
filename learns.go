@@ -1,18 +1,18 @@
 package main
 
 import (
-	"github.com/lrumler/learns/arrays"
-	"github.com/lrumler/learns/conditionals"
-	"github.com/lrumler/learns/functions"
-	"github.com/lrumler/learns/hello"
-	"github.com/lrumler/learns/loops"
-	"github.com/lrumler/learns/maths"
-	"github.com/lrumler/learns/pointers"
-	"github.com/lrumler/learns/random"
-	"github.com/lrumler/learns/slices"
-	"github.com/lrumler/learns/structs"
-	"github.com/lrumler/learns/switches"
-	"github.com/lrumler/learns/types"
+	"github.com/leerumler/learns/arrays"
+	"github.com/leerumler/learns/conditionals"
+	"github.com/leerumler/learns/functions"
+	"github.com/leerumler/learns/hello"
+	"github.com/leerumler/learns/loops"
+	"github.com/leerumler/learns/maths"
+	"github.com/leerumler/learns/pointers"
+	"github.com/leerumler/learns/random"
+	"github.com/leerumler/learns/slices"
+	"github.com/leerumler/learns/structs"
+	"github.com/leerumler/learns/switches"
+	"github.com/leerumler/learns/types"
 )
 
 func main() {
